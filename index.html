@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Sederhana</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #74b9ff, #0984e3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .login-container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      width: 320px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #0984e3;
+    }
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #0984e3;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #74b9ff;
+    }
+
+    .message {
+      margin-top: 10px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Masuk</button>
+    <p class="message" id="message"></p>
+  </div>
+
+  <script>
+    function login() {
+      const user = document.getElementById('username').value;
+      const pass = document.getElementById('password').value;
+      const message = document.getElementById('message');
+
+      // Login sederhana
+      if (user === "admin" && pass === "12345") {
+        message.style.color = "green";
+        message.textContent = "Login berhasil! Selamat datang, " + user + ".";
+        setTimeout(() => {
+          window.location.href = "dashboard.html";
+        }, 1500);
+      } else {
+        message.style.color = "red";
+        message.textContent = "Username atau password salah!";
+      }
+    }
+  </script>
+</body>
+</html>

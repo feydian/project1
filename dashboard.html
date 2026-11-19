@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Percintaan</title>
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #ff9ff3, #feca57);
+      color: #2d3436;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: #d63031;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: #636e72;
+      margin-bottom: 40px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 25px;
+      width: 90%;
+      max-width: 500px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+      margin-bottom: 25px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+    .quote {
+      font-style: italic;
+      color: #2d3436;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+    }
+
+    .author {
+      color: #e17055;
+      font-weight: bold;
+    }
+
+    button {
+      background: #ff7675;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 30px;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #d63031;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: #636e72;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>💖 Informasi Percintaan 💖</h1>
+  <p class="subtitle">Sedikit inspirasi untuk menghangatkan hatimu hari ini ✨</p>
+
+  <div class="card">
+    <p class="quote">"Cinta bukan tentang berapa lama kamu mengenal seseorang, tapi tentang seberapa dalam kamu memahami mereka."</p>
+    <p class="author">– Anonim</p>
+  </div>
+
+  <div class="card">
+    <p class="quote">"Jangan mencintai seseorang karena wajahnya, hartanya, atau pangkatnya. Tapi cintailah karena hatinya yang membuatmu nyaman."</p>
+    <p class="author">– Penulis Tidak Dikenal</p>
+  </div>
+
+  <div class="card">
+    <p class="quote">"Cinta sejati tidak datang dari kata-kata manis, tapi dari tindakan sederhana yang membuat kita merasa berarti."</p>
+    <p class="author">– Anonim</p>
+  </div>
+
+  <button onclick="logout()">Keluar</button>
+
+  <footer>© 2025 Ruang Cinta | Dibuat dengan ❤️ oleh Kamu</footer>
+
+  <script>
+    function logout() {
+      alert("Terima kasih sudah berkunjung 💕");
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>
